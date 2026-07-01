@@ -3,11 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ramp Manufacturing Co. — Precision Metal Supply, Machining & Fabrication</title>
-  <meta name="description" content="Ramp Manufacturing Co. is a full-service industrial partner: mill-direct metal supply, CNC machining, sheet-metal fabrication, in-house processing and surface finishing — from prototype to full production, all under one roof." />
-  <meta property="og:title" content="Ramp Manufacturing Co. — Metal Supply, Machining & Fabrication" />
-  <meta property="og:description" content="Mill-direct metals, precision machining and fabrication, and on-time delivery for shops that can't wait." />
-  <meta property="og:type" content="website" />
+  <title>Ramp Manufacturing Co. — Metal Supply, CNC Machining & Fabrication</title>
+  <meta name="description" content="Order cut-to-size metal stock, tooling and shop supply online, or upload a part for a same-day CNC machining and fabrication quote. ISO 9001:2015. Mill-direct pricing, MTRs, no minimum." />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,385 +13,189 @@
 </head>
 <body>
 
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="tb-left">
+        <span class="tb-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a class="tb-phone" href="tel:+18885550142">(888) 555-0142</a></span>
+        <span class="tb-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Mon&ndash;Fri 7am&ndash;6pm CT</span>
+      </div>
+      <div class="tb-right">
+        <span class="tb-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Cut to size in-house</span>
+        <span class="tb-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/></svg>ISO 9001:2015 certified</span>
+      </div>
+    </div>
+  </div>
+
   <header class="site-header">
     <div class="container nav">
-      <a class="brand" href="index.html" aria-label="Ramp Manufacturing Co. — home">
-        <svg class="brand-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <rect width="64" height="64" rx="14" fill="#161a22" stroke="#29303c"/>
-          <path d="M12 46 L30 18 h10 L22 46 Z" fill="#ff6a1a"/>
-          <path d="M30 46 L48 18 h4 L34 46 Z" fill="#ec5c11"/>
-          <rect x="12" y="49" width="40" height="4" rx="2" fill="#64707f"/>
-        </svg>
-        <span>Ramp Manufacturing<small>Metal Supply Co.</small></span>
-      </a>
-      <nav aria-label="Primary">
-        <ul class="nav-links">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="materials.html">Catalog</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="support.html">Support</a></li>
-        </ul>
-      </nav>
+      <a class="brand" href="index.html" aria-label="Ramp Manufacturing Co. — home"><svg class="brand-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="64" height="64" rx="10" fill="#1b2129"/><path d="M12 46 L30 18 h10 L22 46 Z" fill="#e2530c"/><path d="M30 46 L48 18 h4 L34 46 Z" fill="#c8480a"/><rect x="12" y="49" width="40" height="4" rx="2" fill="#7b8691"/></svg><span>Ramp Manufacturing<small>Metal Supply Co.</small></span></a>
+      <nav aria-label="Primary"><ul class="nav-links"><li><a href="index.html" class="active">Home</a></li><li><a href="materials.html">Catalog</a></li><li><a href="custom.html">Custom Work</a></li><li><a href="services.html">Services</a></li><li><a href="about.html">About</a></li><li><a href="support.html">Support</a></li></ul></nav>
       <div class="nav-cta">
-        <a class="btn btn--ghost" href="support.html">Contact</a>
-        <a class="btn btn--primary" href="support.html#quote">Request a Quote</a>
-        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-        </button>
+        <a class="btn btn--primary" href="custom.html">Get a Quote</a>
+        <a class="cart-link" href="#" data-open-cart aria-label="Open cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg><span class="cart-count" data-count="0"></span></a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
       </div>
     </div>
   </header>
 
   <main>
-    <!-- HERO -->
     <section class="hero">
       <div class="container">
         <div class="hero-grid">
           <div>
-            <span class="eyebrow">Metal supply · Machining · Fabrication</span>
-            <h1>Every industrial challenge,<br><span class="accent">a Ramp solution.</span></h1>
-            <p class="lead">Ramp Manufacturing Co. is your full-service manufacturing partner. Mill-direct metal supply, CNC machining, sheet-metal fabrication and in-house finishing — from pre-production prototyping to full-scale production runs. All under one roof.</p>
+            <span class="eyebrow">Metal supply &middot; Machining &middot; Fabrication</span>
+            <h1>Industrial metals,<br>cut to size. <span class="accent">Machined to spec.</span></h1>
+            <p class="lead">Ramp Manufacturing Co. stocks carbon &amp; alloy steel, stainless, aluminum, copper and brass &mdash; cut, machined, finished and shipped in-house. From one prototype part to a full production run, one supplier from raw stock to your dock.</p>
             <div class="hero-actions">
-              <a class="btn btn--primary btn--lg" href="support.html#quote">Get a Sample Quote</a>
-              <a class="btn btn--ghost btn--lg" href="support.html#quote">Get a Production Quote</a>
+              <a class="btn btn--primary btn--lg" href="materials.html">Shop the Catalog</a>
+              <a class="btn btn--ghost btn--lg" href="custom.html">Upload a Part &amp; Get a Quote</a>
             </div>
-            <div class="pill-row" style="margin-top:26px">
-              <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg> Same-day quotes</span>
-              <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v20M2 12h20"/></svg> ±0.005" precision</span>
-              <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/></svg> ISO-certified QA</span>
+            <div class="pill-row" style="margin-top:24px">
+              <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Same-day quotes</span>
+              <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Cut to &plusmn;0.005&quot;</span>
+              <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>MTRs on request</span>
+              <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>No minimum order</span>
             </div>
           </div>
-
-          <aside class="hero-card" aria-label="At a glance">
+          <aside class="hero-card" aria-label="Stock at a glance">
             <h3>Stock at a glance</h3>
-            <div class="spec-row"><span class="k">Carbon &amp; alloy steel</span><span class="v">A36 · 1018 · 4140</span></div>
-            <div class="spec-row"><span class="k">Stainless</span><span class="v">304 · 316 · 17-4</span></div>
-            <div class="spec-row"><span class="k">Aluminum</span><span class="v">6061 · 5052 · 7075</span></div>
-            <div class="spec-row"><span class="k">Copper &amp; brass</span><span class="v">C110 · C260</span></div>
-            <div class="spec-row"><span class="k">Cutting tolerance</span><span class="v">±0.005"</span></div>
-            <div style="margin-top:18px"><span class="badge-inline">● ISO 9001:2015 quality system</span></div>
+            <div class="hc-body">
+              <div class="spec-row"><span class="k">Carbon &amp; alloy steel</span><span class="v">A36 &middot; 1018 &middot; 4140</span></div>
+              <div class="spec-row"><span class="k">Stainless</span><span class="v">304 &middot; 316 &middot; 17-4</span></div>
+              <div class="spec-row"><span class="k">Aluminum</span><span class="v">6061 &middot; 5052 &middot; 7075</span></div>
+              <div class="spec-row"><span class="k">Copper &amp; brass</span><span class="v">C110 &middot; C260</span></div>
+              <div class="spec-row"><span class="k">Cut tolerance</span><span class="v">&plusmn;0.005&quot;</span></div>
+              <div class="spec-row"><span class="k">Machining tolerance</span><span class="v">&plusmn;0.0004&quot;</span></div>
+              <div style="margin-top:16px"><span class="badge-inline">&#9679; ISO 9001:2015 quality system</span></div>
+            </div>
           </aside>
         </div>
       </div>
     </section>
 
-    <!-- TRUST BAR -->
     <section class="trust">
       <div class="container trust-inner">
         <span class="trust-label">Certified &amp; compliant</span>
-        <div class="trust-logos">
-          <span>ISO 9001:2015</span>
-          <span>ISO 13485:2016</span>
-          <span>ISO 14001:2015</span>
-          <span>AS9100D</span>
-          <span>ITAR REGISTERED</span>
-          <span>RoHS / REACH</span>
-        </div>
+        <div class="trust-logos"><span>ISO 9001:2015</span><span>ISO 13485:2016</span><span>AS9100D</span><span>ITAR REGISTERED</span><span>DFARS</span><span>RoHS / REACH</span></div>
       </div>
     </section>
 
-    <!-- STATS BAND -->
-    <section class="stats-band section--tight">
-      <div class="container">
-        <div class="stats-row">
-          <div class="reveal"><div class="num">15<span>+</span></div><div class="lbl">Years of manufacturing experience</div></div>
-          <div class="reveal"><div class="num">50K<span>+</span></div><div class="lbl">Orders delivered for clients</div></div>
-          <div class="reveal"><div class="num">99.8<span>%</span></div><div class="lbl">First-time accuracy rate</div></div>
-          <div class="reveal"><div class="num">24<span>h</span></div><div class="lbl">Typical quote turnaround</div></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CAPABILITIES -->
     <section class="section">
       <div class="container">
-        <div class="section-head center reveal">
-          <span class="eyebrow">Our capabilities</span>
-          <h2>Everything you need to move from design to production</h2>
-          <p class="lead mx-auto">A vertically integrated shop floor and a full metals inventory — so your parts never wait on an outside vendor.</p>
-        </div>
+        <div class="section-head reveal"><span class="eyebrow">Shop by category</span><h2>Order metal and shop supply online</h2><p class="lead">Priced, in stock, and cut to size. Browse the full catalog or jump to a department.</p></div>
         <div class="grid grid-3">
-          <article class="card reveal">
-            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M6 21V9l6-4 6 4v12M10 21v-6h4v6"/></svg></div>
-            <h3>Metal Supply</h3>
-            <p>Mill-direct stock cut to size — carbon &amp; alloy steel, stainless, aluminum, copper and brass.</p>
-            <ul style="list-style:none;padding:16px 0 0;margin:0;color:var(--muted);font-size:.92rem">
-              <li>Bar · plate · sheet · tube</li>
-              <li>Cut-to-length ±0.005"</li>
-              <li>Full material certs (MTRs)</li>
-            </ul>
-          </article>
-          <article class="card reveal">
-            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg></div>
-            <h3>CNC Machining</h3>
-            <p>Precision machining for complex geometries and tight tolerances.</p>
-            <ul style="list-style:none;padding:16px 0 0;margin:0;color:var(--muted);font-size:.92rem">
-              <li>3 / 4 / 5-axis machining</li>
-              <li>Tolerances to ±0.01mm</li>
-              <li>Turning, milling, EDM</li>
-            </ul>
-          </article>
-          <article class="card reveal">
-            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18v4H3zM3 13h18v4H3z"/></svg></div>
-            <h3>Sheet Metal Fabrication</h3>
-            <p>Custom sheet-metal work for enclosures, brackets and structures.</p>
-            <ul style="list-style:none;padding:16px 0 0;margin:0;color:var(--muted);font-size:.92rem">
-              <li>Laser cutting</li>
-              <li>Press-brake bending</li>
-              <li>Welding &amp; assembly</li>
-            </ul>
-          </article>
-          <article class="card reveal">
-            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l16 16M14 4h6v6M20 14v6h-6"/></svg></div>
-            <h3>Cutting &amp; Processing</h3>
-            <p>In-house saw cutting, waterjet, deburring and heat-treat coordination.</p>
-            <ul style="list-style:none;padding:16px 0 0;margin:0;color:var(--muted);font-size:.92rem">
-              <li>Saw &amp; waterjet cutting</li>
-              <li>Deburr &amp; finishing</li>
-              <li>Heat treat &amp; stress relief</li>
-            </ul>
-          </article>
-          <article class="card reveal">
-            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 6 6 .5-4.5 4 1.5 6L12 15l-6 3.5 1.5-6L3 8.5 9 8z"/></svg></div>
-            <h3>Surface Finishing</h3>
-            <p>Professional surface treatment for durability and corrosion resistance.</p>
-            <ul style="list-style:none;padding:16px 0 0;margin:0;color:var(--muted);font-size:.92rem">
-              <li>Anodizing (Type II / III)</li>
-              <li>Powder coating</li>
-              <li>Black oxide &amp; plating</li>
-            </ul>
-          </article>
-          <article class="card reveal">
-            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z"/></svg></div>
-            <h3>Kitting &amp; Logistics</h3>
-            <p>Just-in-time delivery, managed inventory and consolidated kitting.</p>
-            <ul style="list-style:none;padding:16px 0 0;margin:0;color:var(--muted);font-size:.92rem">
-              <li>Next-day regional delivery</li>
-              <li>Vendor-managed inventory</li>
-              <li>Custom kitting &amp; labeling</li>
-            </ul>
-          </article>
-        </div>
-        <div class="text-center" style="margin-top:40px">
-          <a class="btn btn--primary btn--lg" href="services.html">Explore all services</a>
+          <a class="card card--accent reveal" href="materials.html" style="display:block"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7l10-4 10 4-10 4z"/><path d="M2 7v10l10 4 10-4V7"/><path d="M12 11v10"/></svg></div><h3>Metal Stock</h3><p>Bar, plate, sheet, tube &mdash; carbon, stainless, aluminum, copper &amp; brass, cut to size.</p></a><a class="card card--accent reveal" href="materials.html" style="display:block"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.3L3 18v3h3l6.4-6.4a4 4 0 0 0 5.3-5.4l-2.8 2.8-2.1-2.1z"/></svg></div><h3>Tooling &amp; Cutting</h3><p>End mills, drills, inserts, saw blades and deburring for the shop floor.</p></a><a class="card card--accent reveal" href="materials.html" style="display:block"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg></div><h3>Welding &amp; Consumables</h3><p>MIG/TIG wire, anti-spatter, abrasives, layout fluid and shop consumables.</p></a><a class="card card--accent reveal" href="materials.html" style="display:block"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20M2 12l3-3M2 12l3 3M22 12l-3-3M22 12l-3 3M7 9v6M12 9v6M17 9v6"/></svg></div><h3>Metrology &amp; Safety</h3><p>Calipers, micrometers, squares, gauges and PPE for QC and inspection.</p></a><a class="card card--accent reveal" href="materials.html" style="display:block"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg></div><h3>Hardware &amp; Shop</h3><p>Fastener kits, retaining rings, organizers and storage.</p></a><a class="card card--accent reveal" href="materials.html" style="display:block"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v5H4zM8 9v11M16 9v11M6 20h12"/></svg></div><h3>Custom Machining</h3><p>Upload a part for CNC, sheet-metal or cut-to-size &mdash; quoted in 24h.</p></a>
         </div>
       </div>
     </section>
 
-    <!-- FACILITY SPLIT -->
-    <section class="section stats-band">
+    <section class="section--band section">
       <div class="container">
-        <div class="split">
-          <div class="reveal">
-            <span class="eyebrow">Our facility</span>
-            <h2>A vertically integrated manufacturing hub</h2>
-            <p>Our 120,000 sq ft facility runs specialized production cells and a full metals warehouse under one roof — CNC machining, sheet-metal fabrication, cutting and processing, plus in-house surface treatment and quality inspection. End-to-end manufacturing, one point of accountability.</p>
-            <div class="stat-panel" style="margin-top:26px">
-              <div class="stat"><div class="num">120<span>K</span></div><div class="lbl">Sq ft under roof</div></div>
-              <div class="stat"><div class="num">40<span>+</span></div><div class="lbl">CNC &amp; fabrication machines</div></div>
-              <div class="stat"><div class="num">8</div><div class="lbl">Specialized production cells</div></div>
-              <div class="stat"><div class="num">98<span>%</span></div><div class="lbl">On-time delivery</div></div>
-            </div>
+        <div class="section-head center reveal"><span class="eyebrow">Capabilities</span><h2>From raw stock to finished part &mdash; in one building</h2><p class="lead mx-auto">A full metals warehouse plus a working shop floor, so your parts never wait on an outside vendor.</p></div>
+        <div class="grid grid-3">
+          <article class="card card--accent reveal"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7l10-4 10 4-10 4z"/><path d="M2 7v10l10 4 10-4V7"/><path d="M12 11v10"/></svg></div><h3>Metal Supply</h3><p>Mill-direct stock cut to size on any material we carry.</p><ul style="list-style:none;padding:14px 0 0;margin:0;color:var(--muted);font-size:.9rem;font-family:var(--ff-mono)"><li>Bar &middot; plate &middot; sheet &middot; tube</li><li>Cut-to-length &plusmn;0.005&quot;</li><li>Full MTRs / traceability</li></ul></article><article class="card card--accent reveal"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v5H4zM8 9v11M16 9v11M6 20h12"/></svg></div><h3>CNC Machining</h3><p>Precision machining for tight-tolerance, complex parts.</p><ul style="list-style:none;padding:14px 0 0;margin:0;color:var(--muted);font-size:.9rem;font-family:var(--ff-mono)"><li>3 / 4 / 5-axis</li><li>Tolerances to &plusmn;0.0004&quot;</li><li>Turning, milling, EDM</li></ul></article><article class="card card--accent reveal"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg></div><h3>Sheet Metal &amp; Fab</h3><p>Enclosures, brackets and weldments to print.</p><ul style="list-style:none;padding:14px 0 0;margin:0;color:var(--muted);font-size:.9rem;font-family:var(--ff-mono)"><li>Laser &amp; waterjet cutting</li><li>Press-brake forming</li><li>Welding &amp; assembly</li></ul></article><article class="card card--accent reveal"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l16 16M14 4h6v6M20 14v6h-6"/></svg></div><h3>Cutting &amp; Processing</h3><p>In-house saw, waterjet, deburr and heat-treat coordination.</p><ul style="list-style:none;padding:14px 0 0;margin:0;color:var(--muted);font-size:.9rem;font-family:var(--ff-mono)"><li>Saw &amp; waterjet</li><li>Deburr &amp; finish</li><li>Heat treat &amp; stress relief</li></ul></article><article class="card card--accent reveal"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 6 6 .5-4.5 4 1.5 6L12 15l-6 3.5 1.5-6L3 8.5 9 8z"/></svg></div><h3>Surface Finishing</h3><p>Treatment for durability and corrosion resistance.</p><ul style="list-style:none;padding:14px 0 0;margin:0;color:var(--muted);font-size:.9rem;font-family:var(--ff-mono)"><li>Anodize (II / III)</li><li>Powder coat</li><li>Black oxide &amp; plating</li></ul></article><article class="card card--accent reveal"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z"/></svg></div><h3>Kitting &amp; Logistics</h3><p>JIT delivery, managed inventory and kitting.</p><ul style="list-style:none;padding:14px 0 0;margin:0;color:var(--muted);font-size:.9rem;font-family:var(--ff-mono)"><li>Next-day regional</li><li>Vendor-managed inventory</li><li>Custom kitting &amp; labels</li></ul></article>
+        </div>
+        <div class="text-center" style="margin-top:34px"><a class="btn btn--dark btn--lg" href="services.html">See all services</a></div>
+      </div>
+    </section>
+
+    <section class="stats-band section--tight">
+      <div class="container"><div class="stats-row">
+        <div class="reveal"><div class="num">15<span>+</span></div><div class="lbl">Years in operation</div></div>
+        <div class="reveal"><div class="num">50K<span>+</span></div><div class="lbl">Orders shipped</div></div>
+        <div class="reveal"><div class="num">99.8<span>%</span></div><div class="lbl">First-pass accuracy</div></div>
+        <div class="reveal"><div class="num">24<span>h</span></div><div class="lbl">Quote turnaround</div></div>
+      </div></div>
+    </section>
+
+    <section class="section">
+      <div class="container"><div class="split">
+        <div class="reveal">
+          <span class="eyebrow">Custom work</span>
+          <h2>Send a drawing. Get a real quote.</h2>
+          <p>Upload a CAD file or a cut list and our team returns a manufacturability review, pricing and lead time &mdash; usually within 24 hours. CNC machining, sheet-metal fabrication, waterjet, and cut-to-size on any material we stock.</p>
+          <ul class="checklist">
+            <li><span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><strong>Free DFM review</strong><p>We flag manufacturability and cost drivers before you commit to a run.</p></div></li>
+            <li><span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><strong>1 to 10,000 parts</strong><p>Prototype through production, high-mix / low-volume welcome.</p></div></li>
+            <li><span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><strong>Certs with every shipment</strong><p>Material test reports and inspection records, digital and included.</p></div></li>
+          </ul>
+          <div class="hero-actions"><a class="btn btn--primary btn--lg" href="custom.html">Start a Custom Request</a></div>
+        </div>
+        <div class="reveal"><div class="panel">
+          <div class="steps" style="grid-template-columns:1fr 1fr">
+            <div class="step"><h3>Submit</h3><p>Upload CAD or a cut list &mdash; STEP, IGES, DXF, PDF.</p></div>
+            <div class="step"><h3>Quote</h3><p>Manufacturability review + pricing in 24 hours.</p></div>
+            <div class="step"><h3>Produce</h3><p>Machined and inspected in-process, every batch.</p></div>
+            <div class="step"><h3>Deliver</h3><p>Shipped with tracking, MTRs and inspection records.</p></div>
           </div>
-          <div class="reveal">
-            <div class="panel">
-              <div class="hero-card" style="box-shadow:none;border:0;background:transparent">
-                <h3>Why engineers choose Ramp</h3>
-                <ul class="checklist">
-                  <li><span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><strong>Free engineering review</strong><p>DFM analysis, process optimization and design validation before you commit to a run.</p></div></li>
-                  <li><span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><strong>Mill-direct pricing</strong><p>We buy at the mill and pass the margin to you — no distributor markup.</p></div></li>
-                  <li><span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><strong>One vendor, start to finish</strong><p>Raw material, machining, finishing and logistics — never chase five suppliers again.</p></div></li>
-                  <li><span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><strong>Certs with every shipment</strong><p>Material test reports, inspection records and compliance docs, digital and included.</p></div></li>
-                </ul>
-              </div>
-            </div>
-          </div>
+        </div></div>
+      </div></div>
+    </section>
+
+    <section class="section--band section">
+      <div class="container">
+        <div class="section-head center reveal"><span class="eyebrow">Industries we serve</span><h2>Built for demanding, compliance-driven work</h2></div>
+        <div class="pill-row" style="justify-content:center;gap:12px;max-width:940px;margin-inline:auto">
+          <span class="pill">Aerospace &amp; Defense</span><span class="pill">Medical Devices</span><span class="pill">Automotive</span><span class="pill">Automation &amp; Robotics</span><span class="pill">Energy &amp; Power</span><span class="pill">Oil &amp; Gas</span><span class="pill">Semiconductor</span><span class="pill">Heavy Equipment</span>
         </div>
       </div>
     </section>
 
-    <!-- PROCESS -->
     <section class="section">
       <div class="container">
-        <div class="section-head center reveal">
-          <span class="eyebrow">How it works</span>
-          <h2>From design to delivery — without the complexity</h2>
-          <p class="lead mx-auto">A clear, guided process that keeps your project moving.</p>
-        </div>
-        <div class="steps">
-          <div class="step reveal">
-            <h3>Submit your design</h3>
-            <p>Upload your CAD files or a cut list. We review drawings, materials, tolerances and application. STEP, IGES, STL, PDF.</p>
-          </div>
-          <div class="step reveal">
-            <h3>Review &amp; quotation</h3>
-            <p>Within 24 hours we provide a manufacturability review, process recommendations, pricing and lead-time options.</p>
-          </div>
-          <div class="step reveal">
-            <h3>Production &amp; QC</h3>
-            <p>Once confirmed, we cut and machine with controlled processes and in-process inspection on every batch.</p>
-          </div>
-          <div class="step reveal">
-            <h3>Delivery &amp; support</h3>
-            <p>Parts ship with tracking and inspection records. Our team stays available for follow-up and reorders.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- INDUSTRIES -->
-    <section class="section stats-band">
-      <div class="container">
-        <div class="section-head center reveal">
-          <span class="eyebrow">Industries we serve</span>
-          <h2>Built for demanding, compliance-driven work</h2>
-          <p class="lead mx-auto">Supporting low-to-high volume production across industries with strict performance, compliance and delivery requirements.</p>
-        </div>
-        <div class="pill-row" style="justify-content:center;gap:14px;max-width:900px;margin-inline:auto">
-          <span class="pill">Aerospace &amp; Defense</span>
-          <span class="pill">Medical Devices</span>
-          <span class="pill">Automotive</span>
-          <span class="pill">Automation &amp; Robotics</span>
-          <span class="pill">Energy &amp; Power</span>
-          <span class="pill">Oil &amp; Gas</span>
-          <span class="pill">Semiconductor</span>
-          <span class="pill">Heavy Equipment</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- QUALITY ASSURANCE -->
-    <section class="section">
-      <div class="container">
-        <div class="section-head center reveal">
-          <span class="eyebrow">Quality assurance</span>
-          <h2>Your trust, verified by data</h2>
-          <p class="lead mx-auto">We exceed standards with rigorous testing and verification for real-world applications.</p>
-        </div>
+        <div class="section-head center reveal"><span class="eyebrow">Quality assurance</span><h2>Verified by data, not adjectives</h2></div>
         <div class="grid grid-4">
-          <article class="card reveal">
-            <div style="font-family:var(--ff-head);font-weight:800;font-size:1.8rem;color:var(--brand)">±0.001"</div>
-            <h3 style="font-size:1.1rem;margin-top:8px">CMM Verification</h3>
-            <p>Every critical dimension verified by precision coordinate metrology.</p>
-          </article>
-          <article class="card reveal">
-            <div style="font-family:var(--ff-head);font-weight:800;font-size:1.8rem;color:var(--brand)">2-Hr</div>
-            <h3 style="font-size:1.1rem;margin-top:8px">Dynamic IPQC</h3>
-            <p>In-process quality control every two hours for run-to-run consistency.</p>
-          </article>
-          <article class="card reveal">
-            <div style="font-family:var(--ff-head);font-weight:800;font-size:1.8rem;color:var(--brand)">100%</div>
-            <h3 style="font-size:1.1rem;margin-top:8px">Full Documentation</h3>
-            <p>Material certs, inspection reports and DFM analysis included with every order.</p>
-          </article>
-          <article class="card reveal">
-            <div style="font-family:var(--ff-head);font-weight:800;font-size:1.8rem;color:var(--brand)">ISO</div>
-            <h3 style="font-size:1.1rem;margin-top:8px">Certified</h3>
-            <p>ISO 9001:2015, ISO 13485 and ISO 14001 systems backing every part we ship.</p>
-          </article>
+          <article class="card card--accent reveal"><div style="font-family:var(--ff-head);font-weight:800;font-size:1.7rem;color:var(--brand)">&plusmn;0.0004&quot;</div><h3 style="font-size:1.05rem;margin-top:6px">CMM Verified</h3><p>Critical dimensions checked on coordinate metrology.</p></article>
+          <article class="card card--accent reveal"><div style="font-family:var(--ff-head);font-weight:800;font-size:1.7rem;color:var(--brand)">2-Hr</div><h3 style="font-size:1.05rem;margin-top:6px">In-Process QC</h3><p>Dynamic inspection every two hours, run to run.</p></article>
+          <article class="card card--accent reveal"><div style="font-family:var(--ff-head);font-weight:800;font-size:1.7rem;color:var(--brand)">100%</div><h3 style="font-size:1.05rem;margin-top:6px">Documentation</h3><p>Material certs and inspection reports on every order.</p></article>
+          <article class="card card--accent reveal"><div style="font-family:var(--ff-head);font-weight:800;font-size:1.7rem;color:var(--brand)">ISO</div><h3 style="font-size:1.05rem;margin-top:6px">Certified</h3><p>ISO 9001:2015, ISO 13485 and AS9100D systems.</p></article>
         </div>
       </div>
     </section>
 
-    <!-- FAQ -->
-    <section class="section stats-band">
-      <div class="container">
-        <div class="section-head center reveal">
-          <span class="eyebrow">Have questions?</span>
-          <h2>Answers before you order</h2>
-        </div>
+    <section class="section--band section">
+      <div class="container"><div class="section-head center reveal"><span class="eyebrow">Common questions</span><h2>Answers before you order</h2></div>
         <div class="faq">
-          <div class="faq-item">
-            <button class="faq-q" aria-expanded="false">What tolerances can Ramp hold?<span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
-            <div class="faq-a"><p>We cut stock to ±0.005" and machine to tolerances as tight as ±0.01mm. Critical dimensions are verified on CMM equipment to keep results consistent across every production run.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q" aria-expanded="false">What's your lead time for prototype vs. production?<span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
-            <div class="faq-a"><p>Cut-to-size stock ships same or next day. Machined prototypes typically run 3–5 business days; production batches are scheduled to your delivery date and quoted with firm lead times up front.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q" aria-expanded="false">Do you provide material certifications?<span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
-            <div class="faq-a"><p>Yes. Mill test reports (MTRs) and full traceability are available on all supplied metals, and inspection records ship with every machined and fabricated order for regulated industries.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q" aria-expanded="false">What's the minimum order?<span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
-            <div class="faq-a"><p>There's no hard minimum on stock — order a single cut length or a full mill run. Machining and fabrication are quoted per project, from one-off prototypes to high-mix, low-volume production.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q" aria-expanded="false">How do I get a quote?<span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
-            <div class="faq-a"><p>Send a cut list, drawing or CAD file through our <a href="support.html#quote" style="color:var(--brand)">quote form</a>. Most quotes come back within 24 hours with pricing, lead time and process recommendations.</p></div>
-          </div>
+          <div class="faq-item"><button class="faq-q" aria-expanded="false">What tolerances can Ramp hold?<span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-a"><p>We cut stock to &plusmn;0.005&quot; and machine to tolerances as tight as &plusmn;0.0004&quot;. Critical dimensions are verified on CMM equipment for run-to-run consistency.</p></div></div><div class="faq-item"><button class="faq-q" aria-expanded="false">What&rsquo;s your lead time?<span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-a"><p>Cut-to-size stock ships same or next day. Machined prototypes typically run 3&ndash;5 business days; production batches are scheduled to your delivery date with firm lead times quoted up front.</p></div></div><div class="faq-item"><button class="faq-q" aria-expanded="false">Do you provide material certs (MTRs)?<span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-a"><p>Yes &mdash; mill test reports and full traceability are available on all supplied metals, and inspection records ship with every machined and fabricated order.</p></div></div><div class="faq-item"><button class="faq-q" aria-expanded="false">Is there a minimum order?<span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-a"><p>No hard minimum on stock &mdash; order a single cut length or a full mill run. Custom machining and fabrication are quoted per project.</p></div></div><div class="faq-item"><button class="faq-q" aria-expanded="false">How do I order a custom part?<span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-a"><p>Head to <a href="custom.html" style="color:var(--brand)">Custom Work</a>, upload a CAD file or drawing, and we&rsquo;ll return pricing and lead time &mdash; usually within 24 hours.</p></div></div>
         </div>
       </div>
     </section>
 
-    <!-- CTA -->
     <section class="section">
-      <div class="container">
-        <div class="cta reveal">
-          <div class="container-inner">
-            <span class="eyebrow">Ready when you are</span>
-            <h2>Turn your design into finished parts.</h2>
-            <p class="lead">Get a same-day quote on cut-to-size metals, machining or fabrication — and let one partner carry it from raw stock to your dock.</p>
-            <div class="hero-actions">
-              <a class="btn btn--primary btn--lg" href="support.html#quote">Get a Sample Quote</a>
-              <a class="btn btn--ghost btn--lg" href="materials.html">Browse Materials</a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="container"><div class="cta reveal"><div class="container-inner">
+        <span class="eyebrow">Ready when you are</span>
+        <h2>Get metal moving today.</h2>
+        <p class="lead">Order cut-to-size stock online, or send a drawing for a same-day machining quote. One partner from raw material to finished part.</p>
+        <div class="hero-actions"><a class="btn btn--primary btn--lg" href="materials.html">Shop the Catalog</a><a class="btn btn--light btn--lg" href="custom.html">Get a Quote</a></div>
+      </div></div></div>
     </section>
   </main>
 
-  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a class="brand" href="index.html">
-            <svg class="brand-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <rect width="64" height="64" rx="14" fill="#161a22" stroke="#29303c"/>
-              <path d="M12 46 L30 18 h10 L22 46 Z" fill="#ff6a1a"/>
-              <path d="M30 46 L48 18 h4 L34 46 Z" fill="#ec5c11"/>
-              <rect x="12" y="49" width="40" height="4" rx="2" fill="#64707f"/>
-            </svg>
-            <span>Ramp Manufacturing<small>Metal Supply Co.</small></span>
-          </a>
-          <p>Mill-direct metal supply, precision machining and fabrication — from prototype to production, all under one roof.</p>
+          <a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="64" height="64" rx="10" fill="#1b2129"/><path d="M12 46 L30 18 h10 L22 46 Z" fill="#e2530c"/><path d="M30 46 L48 18 h4 L34 46 Z" fill="#c8480a"/><rect x="12" y="49" width="40" height="4" rx="2" fill="#7b8691"/></svg><span>Ramp Manufacturing<small>Metal Supply Co.</small></span></a>
+          <p>Mill-direct metal supply, precision machining and fabrication. From a single cut length to full production runs &mdash; cut, machined and shipped when your shop needs it.</p>
         </div>
-        <div class="footer-col">
-          <h4>Company</h4>
-          <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="materials.html">Catalog</a></li>
-            <li><a href="support.html">Support</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Capabilities</h4>
-          <ul>
-            <li><a href="services.html">CNC Machining</a></li>
-            <li><a href="services.html">Sheet Metal</a></li>
-            <li><a href="services.html">Surface Finishing</a></li>
-            <li><a href="materials.html">Cut-to-Size</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Get in touch</h4>
-          <ul>
-            <li><a href="mailto:support@rampmanufacturing.co">support@rampmanufacturing.co</a></li>
-            <li><a href="support.html#quote">Request a Quote</a></li>
-          </ul>
-        </div>
+        <div class="footer-col"><h4>Shop</h4><ul><li><a href="materials.html">Metal Stock</a></li><li><a href="materials.html">Tooling &amp; Cutting</a></li><li><a href="materials.html">Welding Supply</a></li><li><a href="materials.html">Metrology</a></li></ul></div>
+        <div class="footer-col"><h4>Company</h4><ul><li><a href="services.html">Services</a></li><li><a href="custom.html">Custom Work</a></li><li><a href="about.html">About</a></li><li><a href="support.html">Support</a></li></ul></div>
+        <div class="footer-col"><h4>Get in touch</h4><ul><li><a class="tb-phone" style="color:#fff;font-family:var(--ff-mono)" href="tel:+18885550142">(888) 555-0142</a></li><li><a href="mailto:support@rampmanufacturing.co">support@rampmanufacturing.co</a></li><li><a href="custom.html">Request a Quote</a></li></ul></div>
       </div>
-      <div class="footer-bottom">
-        <span>© <span data-year>2026</span> Ramp Manufacturing Co. All rights reserved.</span>
-        <span>ISO 9001:2015 · ISO 13485:2016 · ISO 14001:2015</span>
-      </div>
+      <div class="footer-bottom"><span>&copy; <span data-year>2026</span> Ramp Manufacturing Co. All rights reserved.</span><span>ISO 9001:2015 &middot; ISO 13485:2016 &middot; AS9100D</span></div>
     </div>
   </footer>
+
+  <div class="cart-overlay"></div>
+  <aside class="cart-drawer" aria-label="Shopping cart">
+    <div class="cart-head"><h3>Your Cart</h3><button class="cart-close" aria-label="Close cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button></div>
+    <div class="cart-items"></div>
+    <div class="cart-foot">
+      <div class="cart-total"><span class="lbl">Subtotal</span><span class="amt">$0.00</span></div>
+      <button class="btn btn--primary btn--block btn--lg" data-checkout>Checkout</button>
+      <p class="cart-note">Secure checkout &middot; MTRs included &middot; Need a custom size? <a href="custom.html" style="color:var(--brand)">Request a quote</a>.</p>
+    </div>
+  </aside>
 
   <script src="js/main.js"></script>
 </body>
