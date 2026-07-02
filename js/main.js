@@ -2,6 +2,18 @@
 (function () {
   "use strict";
 
+  /* ---------- Vercel Web Analytics ----------
+     Web Analytics is enabled on the Vercel project; this loads the tracking
+     script on every page (all pages include main.js) so pageviews are recorded.
+     Same-origin /_vercel/insights/* is served automatically once WA is on. */
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  (function () {
+    var s = document.createElement("script");
+    s.defer = true;
+    s.src = "/_vercel/insights/script.js";
+    document.head.appendChild(s);
+  })();
+
   /* ---- VeyraGate checkout config ----
      Public, publishable-site-key checkout (client-side). Fill in the
      Ramp Manufacturing site's publishable key to enable live session
