@@ -136,35 +136,14 @@
   if (overlay) overlay.addEventListener("click", close);
   document.addEventListener("keydown", function (e) { if (e.key === "Escape") close(); });
 
-  /* ---------- Checkout via VeyraGate public session ---------- */
+  /* ---------- Checkout ----------
+     Navigate to the inline card checkout page. The cart stays in
+     localStorage; checkout.html reads it, creates the VeyraGate session
+     server-side (same-origin /api/checkout/*), and captures the card via
+     Basis Theory. No card data or Bearer key ever touches this file. */
   function checkout(btn) {
     if (!cart.length) return;
-    var cents = Math.round(total() * 100);
-    var desc = "Ramp Manufacturing order — " + count() + " item" + (count() > 1 ? "s" : "");
-    var summary = cart.map(function (i) { return i.qty + "x " + i.name + (i.spec ? " (" + i.spec + ")" : ""); }).join("; ");
-    if (!VEYRA.siteKey) {
-      var body = "I'd like to place this order:\n\n" + cart.map(function (i) {
-        return i.qty + " x " + i.name + (i.spec ? " " + i.spec : "") + " @ $" + i.price.toFixed(2) + " = $" + (i.price * i.qty).toFixed(2);
-      }).join("\n") + "\n\nOrder total: $" + total().toFixed(2);
-      window.location.href = "mailto:support@rampmanufacturing.co?subject=" + encodeURIComponent("New order — $" + total().toFixed(2)) + "&body=" + encodeURIComponent(body);
-      return;
-    }
-    var old = btn.textContent; btn.textContent = "Starting secure checkout…"; btn.disabled = true;
-    fetch(VEYRA.base + "/api/v1/public/checkout_sessions", {
-      method: "POST",
-      headers: { "Content-Type": "application/json", "X-Veyra-Site-Key": VEYRA.siteKey },
-      body: JSON.stringify({
-        amount_cents: cents, currency: VEYRA.currency, description: desc,
-        return_url: window.location.origin + "/order-confirmed.html",
-        metadata: { vg_merchant_ref: summary.slice(0, 190) }
-      })
-    }).then(function (r) { return r.json(); }).then(function (j) {
-      if (j && j.checkout_url) { window.location.href = j.checkout_url; }
-      else { throw new Error(j && j.error ? j.error : "session failed"); }
-    }).catch(function () {
-      btn.textContent = old; btn.disabled = false;
-      alert("We couldn't start checkout just now. Please try again or email support@rampmanufacturing.co and we'll invoice you directly.");
-    });
+    window.location.href = "checkout.html";
   }
 
   render();
